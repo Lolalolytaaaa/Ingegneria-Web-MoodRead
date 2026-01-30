@@ -4,7 +4,6 @@ import MoodSelect from '../views/MoodSelect.vue'
 import LoginView from '../views/LoginView.vue'
 import ResultsView from '../views/ResultsView.vue'
 import ForumView from '../views/ForumView.vue'
-// 1. IMPORTA LA NUOVA VISTA
 import RegisterView from '../views/RegisterView.vue' 
 
 const router = createRouter({
@@ -15,8 +14,6 @@ const router = createRouter({
     { path: '/login', name: 'login', component: LoginView },
     { path: '/results', name: 'results', component: ResultsView },
     { path: '/forum', name: 'forum', component: ForumView },
-    
-    // 2. AGGIUNGI LA ROTTA REGISTRAZIONE
     { 
       path: '/register', 
       name: 'register', 
