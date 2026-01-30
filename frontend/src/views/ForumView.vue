@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-
-// Dati simulati delle recensioni
 const reviews = ref([
   {
     id: 1,
@@ -77,9 +75,7 @@ const reviews = ref([
 
 const moods = ['Tutti', 'Felice', 'Carico', 'Triste', 'Arrabbiato', 'Divertito', 'Annoiato', 'Indifferente', 'Ansioso', 'Innamorato', 'Malumore'];
 const selectedMood = ref('Tutti');
-const showWriteInput = ref(false); // Per mostrare/nascondere l'area di scrittura
-
-// Filtra le recensioni in base al mood selezionato
+const showWriteInput = ref(false); 
 const filteredReviews = computed(() => {
   if (selectedMood.value === 'Tutti') return reviews.value;
   return reviews.value.filter(r => r.mood === selectedMood.value);
@@ -155,7 +151,6 @@ const filteredReviews = computed(() => {
 </template>
 
 <style scoped>
-/* Nasconde la scrollbar orizzontale ma permette lo scroll */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
