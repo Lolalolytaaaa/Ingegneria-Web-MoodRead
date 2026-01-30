@@ -13,7 +13,6 @@ export default {
         'mood-accent': '#8DAF7E',
       },
       fontFamily: {
-        // GFS DIDOT PER TUTTO IL SITO (Eleganza classica)
         'display': ['"GFS Didot"', 'serif'], 
         'body': ['"GFS Didot"', 'serif'], 
       },
